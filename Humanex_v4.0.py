@@ -25,7 +25,7 @@ from typing import List, Dict, Optional, Any
 
 # PyQt6 imports
 from PyQt6.QtWidgets import (
-    QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QFormLayout,
+    QApplication, QWidget, QVBoxLayout, QHBoxLayout, QFormLayout,
     QLabel, QLineEdit, QPushButton, QFileDialog, QTextEdit, QMessageBox, QComboBox,
     QProgressBar, QTableWidget, QHeaderView, QAbstractItemView, QCheckBox, QSizePolicy,
     QListWidget, QListWidgetItem, QSpinBox, QDoubleSpinBox, QTabWidget, QGroupBox,
@@ -1505,9 +1505,9 @@ class SimulatorGUI(QWidget):
         # URL Table
         self.url_table = QTableWidget(0, 3)
         self.url_table.setHorizontalHeaderLabels(["Target Website", "Stay Time (ms)", ""])
-        self.url_table.horizontalHeader().setSectionResizeMode(0, QHeaderView.ResizeMode.Stretch)
-        self.url_table.horizontalHeader().setSectionResizeMode(1, QHeaderView.ResizeMode.ResizeToContents)
-        self.url_table.horizontalHeader().setSectionResizeMode(2, QHeaderView.ResizeMode.ResizeToContents)
+        self.url_table.horizontalHeader().setSectionResizeMode(0, QHeaderView.Stretch)
+        self.url_table.horizontalHeader().setSectionResizeMode(1, QHeaderView.ResizeToContents)
+        self.url_table.horizontalHeader().setSectionResizeMode(2, QHeaderView.ResizeToContents)
         self.url_table.setMinimumHeight(130)
         self.url_table.setMaximumHeight(200)
         self.url_table.setSelectionBehavior(QAbstractItemView.SelectionBehavior.SelectRows)
