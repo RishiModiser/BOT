@@ -1,0 +1,15 @@
+# Humanex v4.0 Requirements
+# Python 3.11+ recommended
+
+# GUI Framework
+PyQt6==6.6.1
+PyQt6-Qt6==6.6.1
+PyQt6-sip==13.6.0
+
+# Browser Automation
+playwright==1.40.0
+
+# HTTP Requests
+requests==2.31.0
+
+# Additional utilities

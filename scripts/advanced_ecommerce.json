@@ -1,0 +1,111 @@
+{
+  "name": "Advanced E-commerce Browse Script",
+  "description": "Simulates browsing an e-commerce website with search and product viewing",
+  "actions": [
+    {
+      "id": "step-001",
+      "type": "navigate",
+      "config": {
+        "url": "https://example-shop.com",
+        "timeout": 30000
+      }
+    },
+    {
+      "id": "step-002",
+      "type": "wait",
+      "config": {
+        "duration": 2000
+      }
+    },
+    {
+      "id": "step-003",
+      "type": "scrollPage",
+      "config": {
+        "scrollType": "position",
+        "position": "middle",
+        "wheelDistance": [80, 120],
+        "sleepTime": [150, 250]
+      }
+    },
+    {
+      "id": "step-004",
+      "type": "click",
+      "config": {
+        "selector": "input[name='search']",
+        "timeout": 5000
+      }
+    },
+    {
+      "id": "step-005",
+      "type": "inputText",
+      "config": {
+        "selector": "input[name='search']",
+        "text": "laptop",
+        "timeout": 5000
+      }
+    },
+    {
+      "id": "step-006",
+      "type": "wait",
+      "config": {
+        "duration": 1000
+      }
+    },
+    {
+      "id": "step-007",
+      "type": "click",
+      "config": {
+        "selector": "button[type='submit']",
+        "timeout": 5000
+      }
+    },
+    {
+      "id": "step-008",
+      "type": "wait",
+      "config": {
+        "duration": 3000
+      }
+    },
+    {
+      "id": "step-009",
+      "type": "scrollPage",
+      "config": {
+        "scrollType": "position",
+        "position": "bottom",
+        "wheelDistance": [100, 150],
+        "sleepTime": [200, 300]
+      }
+    },
+    {
+      "id": "step-010",
+      "type": "wait",
+      "config": {
+        "duration": 2000
+      }
+    },
+    {
+      "id": "step-011",
+      "type": "goBack",
+      "config": {}
+    },
+    {
+      "id": "step-012",
+      "type": "wait",
+      "config": {
+        "duration": 2000
+      }
+    },
+    {
+      "id": "step-013",
+      "type": "refresh",
+      "config": {}
+    },
+    {
+      "id": "step-014",
+      "type": "wait",
+      "config": {
+        "duration": 3000
+      }
+    }
+  ]
+}
