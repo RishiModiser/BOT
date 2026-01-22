@@ -1,0 +1,32 @@
+{
+  "app_name": "Humanex",
+  "version": "4.0",
+  "settings": {
+    "theme": "jarvis_dark",
+    "auto_save_logs": true,
+    "max_log_file_size_mb": 10,
+    "concurrent_profiles_default": 5,
+    "desktop_percentage_default": 70,
+    "android_percentage_default": 30,
+    "default_stay_time_ms": 30000,
+    "enable_animations": true,
+    "auto_update_check": true
+  },
+  "proxy": {
+    "validate_before_use": false,
+    "rotation_strategy": "sequential",
+    "timeout_seconds": 10
+  },
+  "browser": {
+    "headless_default": false,
+    "viewport_width": 1920,
+    "viewport_height": 1080,
+    "user_agent_rotation": true
+  },
+  "anti_detection": {
+    "enable_fingerprint_randomization": true,
+    "enable_timezone_spoofing": true,
+    "enable_canvas_noise": true,
+    "enable_webgl_spoofing": true
+  }
+}

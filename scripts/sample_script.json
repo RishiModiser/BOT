@@ -1,0 +1,55 @@
+{
+  "name": "Sample Website Visit Script",
+  "description": "Example RPA script demonstrating various actions",
+  "actions": [
+    {
+      "id": "action-001",
+      "type": "navigate",
+      "config": {
+        "url": "https://example.com",
+        "timeout": 30000
+      }
+    },
+    {
+      "id": "action-002",
+      "type": "wait",
+      "config": {
+        "duration": 2000
+      }
+    },
+    {
+      "id": "action-003",
+      "type": "scrollPage",
+      "config": {
+        "scrollType": "position",
+        "position": "middle",
+        "wheelDistance": [100, 150],
+        "sleepTime": [200, 300]
+      }
+    },
+    {
+      "id": "action-004",
+      "type": "wait",
+      "config": {
+        "duration": 3000
+      }
+    },
+    {
+      "id": "action-005",
+      "type": "scrollPage",
+      "config": {
+        "scrollType": "position",
+        "position": "bottom",
+        "wheelDistance": [100, 150],
+        "sleepTime": [200, 300]
+      }
+    },
+    {
+      "id": "action-006",
+      "type": "wait",
+      "config": {
+        "duration": 5000
+      }
+    }
+  ]
+}
