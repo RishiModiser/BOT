@@ -1,18 +1,3 @@
-```python
-# Humanex - Enterprise-Grade Windows Desktop Automation Platform (Single File)
-# Requirements:
-# - Python (core Python only) + PySide6 + Playwright (sync API)
-# - Visible Chrome only (headless=False)
-# - One shared browser instance, isolated context per profile, controlled concurrency
-# - Robust validation, crash-safe persistence, strong error handling, no placeholders
-#
-# NOTE: You must install dependencies:
-#   pip install PySide6 playwright
-#   playwright install chrome
-#
-# Run:
-#   python humanex.py
-
 import os
 import sys
 import json
@@ -3186,4 +3171,5 @@ if __name__ == "__main__":
             print("Humanex Fatal Error:", e)
             print(traceback.format_exc())
         raise
+
 ```
